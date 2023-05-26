@@ -1,0 +1,132 @@
+wandb: Currently logged in as: kartik-ahuja (use `wandb login --relogin` to force relogin)
+wandb: wandb version 0.15.3 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.12.11
+wandb: Run data is saved locally in /private/home/kartikahuja/metaresearch/iclmlp/wandb/run-20230525_182418-2av4je18
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run wandering-eon-772
+wandb: ⭐️ View project at https://wandb.ai/kartik-ahuja/in-context-learning
+wandb: 🚀 View run at https://wandb.ai/kartik-ahuja/in-context-learning/runs/2av4je18
+Thread SenderThread:
+Traceback (most recent call last):
+  File "/private/home/kartikahuja/.conda/envs/balancinggroups/envs/in-context-learning/lib/python3.8/site-packages/wandb/sdk/internal/internal_util.py", line 54, in run
+    self._run()
+  File "/private/home/kartikahuja/.conda/envs/balancinggroups/envs/in-context-learning/lib/python3.8/site-packages/wandb/sdk/internal/internal_util.py", line 105, in _run
+    self._process(record)
+  File "/private/home/kartikahuja/.conda/envs/balancinggroups/envs/in-context-learning/lib/python3.8/site-packages/wandb/sdk/internal/internal.py", line 312, in _process
+    self._sm.send(record)
+  File "/private/home/kartikahuja/.conda/envs/balancinggroups/envs/in-context-learning/lib/python3.8/site-packages/wandb/sdk/internal/sender.py", line 237, in send
+    send_handler(record)
+  File "/private/home/kartikahuja/.conda/envs/balancinggroups/envs/in-context-learning/lib/python3.8/site-packages/wandb/sdk/internal/sender.py", line 830, in send_summary
+    self._update_summary()
+  File "/private/home/kartikahuja/.conda/envs/balancinggroups/envs/in-context-learning/lib/python3.8/site-packages/wandb/sdk/internal/sender.py", line 842, in _update_summary
+    with open(summary_path, "w") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/private/home/kartikahuja/metaresearch/iclmlp/wandb/run-20230525_182418-2av4je18/files/wandb-summary.json'
+wandb: ERROR Internal wandb error: file data was not synced
+Exception in thread ChkStopThr:
+Traceback (most recent call last):
+  File "/private/home/kartikahuja/.conda/envs/balancinggroups/envs/in-context-learning/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+Exception in thread NetStatThr:
+Traceback (most recent call last):
+  File "/private/home/kartikahuja/.conda/envs/balancinggroups/envs/in-context-learning/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/private/home/kartikahuja/.conda/envs/balancinggroups/envs/in-context-learning/lib/python3.8/threading.py", line 870, in run
+    self.run()
+  File "/private/home/kartikahuja/.conda/envs/balancinggroups/envs/in-context-learning/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/private/home/kartikahuja/.conda/envs/balancinggroups/envs/in-context-learning/lib/python3.8/site-packages/wandb/sdk/wandb_run.py", line 167, in check_status
+    self._target(*self._args, **self._kwargs)
+  File "/private/home/kartikahuja/.conda/envs/balancinggroups/envs/in-context-learning/lib/python3.8/site-packages/wandb/sdk/wandb_run.py", line 149, in check_network_status
+    status_response = self._interface.communicate_stop_status()
+  File "/private/home/kartikahuja/.conda/envs/balancinggroups/envs/in-context-learning/lib/python3.8/site-packages/wandb/sdk/interface/interface.py", line 114, in communicate_stop_status
+    status_response = self._interface.communicate_network_status()
+  File "/private/home/kartikahuja/.conda/envs/balancinggroups/envs/in-context-learning/lib/python3.8/site-packages/wandb/sdk/interface/interface.py", line 125, in communicate_network_status
+    resp = self._communicate_stop_status(status)
+  File "/private/home/kartikahuja/.conda/envs/balancinggroups/envs/in-context-learning/lib/python3.8/site-packages/wandb/sdk/interface/interface_shared.py", line 387, in _communicate_stop_status
+    resp = self._communicate_network_status(status)
+  File "/private/home/kartikahuja/.conda/envs/balancinggroups/envs/in-context-learning/lib/python3.8/site-packages/wandb/sdk/interface/interface_shared.py", line 397, in _communicate_network_status
+    resp = self._communicate(req, local=True)
+  File "/private/home/kartikahuja/.conda/envs/balancinggroups/envs/in-context-learning/lib/python3.8/site-packages/wandb/sdk/interface/interface_shared.py", line 222, in _communicate
+    resp = self._communicate(req, local=True)
+  File "/private/home/kartikahuja/.conda/envs/balancinggroups/envs/in-context-learning/lib/python3.8/site-packages/wandb/sdk/interface/interface_shared.py", line 222, in _communicate
+    return self._communicate_async(rec, local=local).get(timeout=timeout)
+  File "/private/home/kartikahuja/.conda/envs/balancinggroups/envs/in-context-learning/lib/python3.8/site-packages/wandb/sdk/interface/interface_shared.py", line 227, in _communicate_async
+    return self._communicate_async(rec, local=local).get(timeout=timeout)
+  File "/private/home/kartikahuja/.conda/envs/balancinggroups/envs/in-context-learning/lib/python3.8/site-packages/wandb/sdk/interface/interface_shared.py", line 227, in _communicate_async
+    raise Exception("The wandb backend process has shutdown")
+Exception: The wandb backend process has shutdown
+    raise Exception("The wandb backend process has shutdown")
+Exception: The wandb backend process has shutdown
+Traceback (most recent call last):
+  File "iclmlp_cln_jmtd.py", line 131, in <module>
+    main(args, run_id, wandb_run)
+  File "iclmlp_cln_jmtd.py", line 106, in main
+    train_erm(dataset_train, model, args.model, run_id, 100, args.out_dir)
+  File "/private/home/kartikahuja/metaresearch/iclmlp/train_mlps.py", line 76, in train_erm
+    wandb.log({"Training-loss":loss})
+  File "/private/home/kartikahuja/.conda/envs/balancinggroups/envs/in-context-learning/lib/python3.8/site-packages/wandb/sdk/wandb_run.py", line 1422, in log
+    self._log(data=data, step=step, commit=commit)
+  File "/private/home/kartikahuja/.conda/envs/balancinggroups/envs/in-context-learning/lib/python3.8/site-packages/wandb/sdk/wandb_run.py", line 1232, in _log
+    self._partial_history_callback(data, self.history_step, commit=True)
+  File "/private/home/kartikahuja/.conda/envs/balancinggroups/envs/in-context-learning/lib/python3.8/site-packages/wandb/sdk/wandb_run.py", line 1083, in _partial_history_callback
+    self._backend.interface.publish_partial_history(
+  File "/private/home/kartikahuja/.conda/envs/balancinggroups/envs/in-context-learning/lib/python3.8/site-packages/wandb/sdk/interface/interface.py", line 517, in publish_partial_history
+    self._publish_partial_history(partial_history)
+  File "/private/home/kartikahuja/.conda/envs/balancinggroups/envs/in-context-learning/lib/python3.8/site-packages/wandb/sdk/interface/interface_shared.py", line 61, in _publish_partial_history
+    self._publish(rec)
+  File "/private/home/kartikahuja/.conda/envs/balancinggroups/envs/in-context-learning/lib/python3.8/site-packages/wandb/sdk/interface/interface_queue.py", line 49, in _publish
+    raise Exception("The wandb backend process has shutdown")
+Exception: The wandb backend process has shutdown
+--- Logging error ---
+Traceback (most recent call last):
+  File "/private/home/kartikahuja/.conda/envs/balancinggroups/envs/in-context-learning/lib/python3.8/logging/__init__.py", line 1089, in emit
+    self.flush()
+  File "/private/home/kartikahuja/.conda/envs/balancinggroups/envs/in-context-learning/lib/python3.8/logging/__init__.py", line 1069, in flush
+    self.stream.flush()
+OSError: [Errno 116] Stale file handle
+Call stack:
+  File "/private/home/kartikahuja/.conda/envs/balancinggroups/envs/in-context-learning/lib/python3.8/site-packages/wandb/sdk/wandb_run.py", line 1740, in <lambda>
+    atexit.register(lambda: self._atexit_cleanup())
+  File "/private/home/kartikahuja/.conda/envs/balancinggroups/envs/in-context-learning/lib/python3.8/site-packages/wandb/sdk/wandb_run.py", line 1702, in _atexit_cleanup
+    logger.info(f"got exitcode: {exit_code}")
+Message: 'got exitcode: 1'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "/private/home/kartikahuja/.conda/envs/balancinggroups/envs/in-context-learning/lib/python3.8/site-packages/wandb/sdk/wandb_run.py", line 1711, in _atexit_cleanup
+    self._on_finish()
+  File "/private/home/kartikahuja/.conda/envs/balancinggroups/envs/in-context-learning/lib/python3.8/site-packages/wandb/sdk/wandb_run.py", line 1801, in _on_finish
+    self._telemetry_imports(tel.imports_finish)
+  File "/private/home/kartikahuja/.conda/envs/balancinggroups/envs/in-context-learning/lib/python3.8/site-packages/wandb/sdk/lib/telemetry.py", line 43, in __exit__
+    self._run._telemetry_callback(self._obj)
+  File "/private/home/kartikahuja/.conda/envs/balancinggroups/envs/in-context-learning/lib/python3.8/site-packages/wandb/sdk/wandb_run.py", line 470, in _telemetry_callback
+    self._telemetry_flush()
+  File "/private/home/kartikahuja/.conda/envs/balancinggroups/envs/in-context-learning/lib/python3.8/site-packages/wandb/sdk/wandb_run.py", line 481, in _telemetry_flush
+    self._backend.interface._publish_telemetry(self._telemetry_obj)
+  File "/private/home/kartikahuja/.conda/envs/balancinggroups/envs/in-context-learning/lib/python3.8/site-packages/wandb/sdk/interface/interface_shared.py", line 73, in _publish_telemetry
+    self._publish(rec)
+  File "/private/home/kartikahuja/.conda/envs/balancinggroups/envs/in-context-learning/lib/python3.8/site-packages/wandb/sdk/interface/interface_queue.py", line 49, in _publish
+    raise Exception("The wandb backend process has shutdown")
+Exception: The wandb backend process has shutdown
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/private/home/kartikahuja/.conda/envs/balancinggroups/envs/in-context-learning/lib/python3.8/logging/__init__.py", line 1089, in emit
+    self.flush()
+  File "/private/home/kartikahuja/.conda/envs/balancinggroups/envs/in-context-learning/lib/python3.8/logging/__init__.py", line 1069, in flush
+    self.stream.flush()
+OSError: [Errno 116] Stale file handle
+Call stack:
+  File "/private/home/kartikahuja/.conda/envs/balancinggroups/envs/in-context-learning/lib/python3.8/site-packages/wandb/sdk/wandb_run.py", line 1740, in <lambda>
+    atexit.register(lambda: self._atexit_cleanup())
+  File "/private/home/kartikahuja/.conda/envs/balancinggroups/envs/in-context-learning/lib/python3.8/site-packages/wandb/sdk/wandb_run.py", line 1721, in _atexit_cleanup
+    self._console_stop()
+  File "/private/home/kartikahuja/.conda/envs/balancinggroups/envs/in-context-learning/lib/python3.8/site-packages/wandb/sdk/wandb_run.py", line 1751, in _console_stop
+    self._restore()
+  File "/private/home/kartikahuja/.conda/envs/balancinggroups/envs/in-context-learning/lib/python3.8/site-packages/wandb/sdk/wandb_run.py", line 1674, in _restore
+    logger.info("restore")
+Message: 'restore'
+Arguments: ()
+/private/home/kartikahuja/.conda/envs/balancinggroups/envs/in-context-learning/lib/python3.8/multiprocessing/resource_tracker.py:216: UserWarning: resource_tracker: There appear to be 6 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
