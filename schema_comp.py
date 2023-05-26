@@ -1,3 +1,5 @@
+# Copyright (c) Facebook, Inc. and its affiliates. All Rights Reserved
+
 from quinine import (tstring,
     tinteger,
     tfloat,
