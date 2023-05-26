@@ -1,4 +1,4 @@
-
+# Copyright (c) Facebook, Inc. and its affiliates. All Rights Reserved
 
 # replace with your path to checkpoint for MLP set model 
 path_mlp: /private/home/kartikahuja/icl/models/run_kicd8dmz/model_checkpoint_500.pt

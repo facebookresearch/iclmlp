@@ -1,8 +1,0 @@
-# conda environments:
-#
-balancinggroups          /private/home/kartikahuja/.conda/envs/balancinggroups
-                      *  /private/home/kartikahuja/.conda/envs/balancinggroups/envs/in-context-learning
-in-context-learning      /private/home/kartikahuja/.conda/envs/in-context-learning
-my_env                   /private/home/kartikahuja/.conda/envs/my_env
-base                     /public/apps/anaconda3/2022.05
-

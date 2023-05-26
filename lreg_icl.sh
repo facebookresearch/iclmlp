@@ -26,8 +26,6 @@ conda info --envs
 
 #
 
-python iclmlp_cln_jmtd.py --config confs/linear_regression_icl5.yaml
-python iclmlp_cln_jmtd.py --config confs/linear_regression_icl6.yaml
-python iclmlp_cln_jmtd.py --config confs/linear_regression_icl7.yaml
-python iclmlp_cln_jmtd.py --config confs/linear_regression_icl8.yaml
-python iclmlp_cln_jmtd.py --config confs/linear_regression_icl9.yaml
+
+python iclmlp_cln_jmtd.py --config confs/linear_regression_icl2.yaml
+
