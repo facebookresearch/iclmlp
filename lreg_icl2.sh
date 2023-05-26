@@ -1,3 +1,5 @@
+## Copyright (c) Facebook, Inc. and its affiliates. All Rights Reserved
+
 #!/bin/bash
 #SBATCH --cpus-per-task=10
 #SBATCH --nodes=1
