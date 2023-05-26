@@ -1,0 +1,171 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.12.11
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    python_version: 3.8.12
+    start_time: 1684461730
+    t:
+      1:
+      - 1
+      2:
+      - 1
+      4: 3.8.12
+      5: 0.12.11
+      8:
+      - 5
+    visualize:
+      in-context-loss-100:
+        panel_config:
+          fieldSettings:
+            stroke: null
+            x: x
+            y: y
+          panelDefId: wandb/line/v0
+          stringSettings:
+            title: ICL_epoch100
+          transform:
+            name: tableWithLeafColNames
+          userQuery:
+            queryFields:
+            - args:
+              - name: runSets
+                value: ${runSets}
+              fields:
+              - fields: []
+                name: id
+              - fields: []
+                name: name
+              - fields: []
+                name: _defaultColorIndex
+              - args:
+                - name: tableKey
+                  value: in-context-loss-100_table
+                fields: []
+                name: summaryTable
+              name: runSets
+        panel_type: Vega2
+      in-context-loss-200:
+        panel_config:
+          fieldSettings:
+            stroke: null
+            x: x
+            y: y
+          panelDefId: wandb/line/v0
+          stringSettings:
+            title: ICL_epoch200
+          transform:
+            name: tableWithLeafColNames
+          userQuery:
+            queryFields:
+            - args:
+              - name: runSets
+                value: ${runSets}
+              fields:
+              - fields: []
+                name: id
+              - fields: []
+                name: name
+              - fields: []
+                name: _defaultColorIndex
+              - args:
+                - name: tableKey
+                  value: in-context-loss-200_table
+                fields: []
+                name: summaryTable
+              name: runSets
+        panel_type: Vega2
+      in-context-loss-300:
+        panel_config:
+          fieldSettings:
+            stroke: null
+            x: x
+            y: y
+          panelDefId: wandb/line/v0
+          stringSettings:
+            title: ICL_epoch300
+          transform:
+            name: tableWithLeafColNames
+          userQuery:
+            queryFields:
+            - args:
+              - name: runSets
+                value: ${runSets}
+              fields:
+              - fields: []
+                name: id
+              - fields: []
+                name: name
+              - fields: []
+                name: _defaultColorIndex
+              - args:
+                - name: tableKey
+                  value: in-context-loss-300_table
+                fields: []
+                name: summaryTable
+              name: runSets
+        panel_type: Vega2
+      in-context-loss-400:
+        panel_config:
+          fieldSettings:
+            stroke: null
+            x: x
+            y: y
+          panelDefId: wandb/line/v0
+          stringSettings:
+            title: ICL_epoch400
+          transform:
+            name: tableWithLeafColNames
+          userQuery:
+            queryFields:
+            - args:
+              - name: runSets
+                value: ${runSets}
+              fields:
+              - fields: []
+                name: id
+              - fields: []
+                name: name
+              - fields: []
+                name: _defaultColorIndex
+              - args:
+                - name: tableKey
+                  value: in-context-loss-400_table
+                fields: []
+                name: summaryTable
+              name: runSets
+        panel_type: Vega2
+      in-context-loss-500:
+        panel_config:
+          fieldSettings:
+            stroke: null
+            x: x
+            y: y
+          panelDefId: wandb/line/v0
+          stringSettings:
+            title: ICL_epoch500
+          transform:
+            name: tableWithLeafColNames
+          userQuery:
+            queryFields:
+            - args:
+              - name: runSets
+                value: ${runSets}
+              fields:
+              - fields: []
+                name: id
+              - fields: []
+                name: name
+              - fields: []
+                name: _defaultColorIndex
+              - args:
+                - name: tableKey
+                  value: in-context-loss-500_table
+                fields: []
+                name: summaryTable
+              name: runSets
+        panel_type: Vega2

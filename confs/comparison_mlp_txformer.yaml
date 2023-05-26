@@ -1,0 +1,12 @@
+
+
+# replace with your path to checkpoint for MLP set model 
+path_mlp: /private/home/kartikahuja/icl/models/run_kicd8dmz/model_checkpoint_500.pt
+
+# replace with your path to the directory where checkpoint, conf.yaml file for training run of transformer are stored 
+path_txformer: /private/home/kartikahuja/in-context-learning/models/linear_regression_new/cd867500-8f08-450b-8af5-5db09c439f1d/
+
+# replace with your wandb login
+wandb_entity: "kartik-ahuja" 
+
+

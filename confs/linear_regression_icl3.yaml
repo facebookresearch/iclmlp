@@ -1,0 +1,37 @@
+
+model:
+    architecture: "MLP_medium"
+    input_dim: 11
+    psi_hidden_dim: 500
+    rho_hidden_dim: 500
+    xi_hidden_dim:  500
+    psi_output_dim: 100
+    rho_output_dim: 100
+    output_dim    : 1
+    lr            : 0.001
+    num_epochs    : 500
+    activations:
+      - 'ReLU'
+    batch_norms:
+      - True
+      # - false
+    layer_norms:
+      - False
+      # - false
+    dropouts:
+      - 0.0
+      # - 0.5
+
+data:
+  num_examples: 10000000
+  data_dim: 10
+  prompt_max_len_train: 50
+  prompt_max_len_test: 50
+  noise: True
+
+
+out_dir: /private/home/kartikahuja/icl/models/
+
+wandb_entity: "kartik-ahuja"
+
+

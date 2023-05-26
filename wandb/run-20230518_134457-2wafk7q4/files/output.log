@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "Comparisons_final.py", line 132, in <module>
+    main(args)
+  File "Comparisons_final.py", line 41, in main
+    model, conf = get_model_from_run(run_path)
+  File "/private/home/kartikahuja/iclmlp/eval.py", line 19, in get_model_from_run
+    with open(config_path) as fp:  # we don't Quinfig it to avoid inherits
+FileNotFoundError: [Errno 2] No such file or directory: '/private/home/kartikahuja/iclmlp/checkpt/txformer/linear_regression_new/cd867500-8f08-450b-8af5-5db09c439f1d/config.yaml'
