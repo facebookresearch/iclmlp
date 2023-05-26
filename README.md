@@ -1,4 +1,7 @@
-# A Closer Look At In-Context Learning Under Distribution Shifts
+
+# A Closer Look at In-Context Learning under Distribution Shifts
+
+[Arxiv Paper](link)
 
 ## Setup
 
@@ -9,13 +12,14 @@
     conda activate in-context-learning
     ```
 
-2. Train set-based MLPs. Change the YAML file (linear_regression_icl2.yaml) with your Wandb id and directory to store the models.
+2. Train set-based MLPs. Add you wandb id and path to the directory to save the models in the YAML file (linear_regression_icl2.yaml). 
+
     ```
     python iclmlp_cln_jmtd.py --config confs/linear_regression_icl2.yaml
 
     ```
 
-3. Compare set-based MLP to transformers, OLS and Ridge. For training transformer, we use https://github.com/dtsip/in-context-learning. Specify the path to checkpoints of set-based MLP and transformer model in the YAML file (comparison_mlp_txformer.yaml) and run
+3. Compare set-based MLP to transformers, OLS and tidge. For training a transformer, we use the code here https://github.com/dtsip/in-context-learning. Once both set-based MLP and transformer are trained, specify the paths to their respective checkpoints in the YAML file (comparison_mlp_txformer.yaml) and run.
 
     ```
     python Comparisons_final.py --config confs/comparison_mlp_txformer.yaml
