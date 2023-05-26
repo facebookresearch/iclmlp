@@ -20,3 +20,7 @@
     ```
     python Comparisons_final.py --config confs/comparison_mlp_txformer.yaml
     ```
+
+## License 
+
+The majority of iclmlp is licensed under CC-BY-NC, however portions of the project (base_models,eval,samplers,tasks) are available under separate license terms: in-context-learning is licensed under the MIT license.
